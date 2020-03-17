@@ -30,7 +30,6 @@ class ChoiceState extends State<Choice> {
   void initState() {
     super.initState();
     SystemChannels.textInput.invokeMethod('TextInput.hide');
-    primaryColor = Theme.of(context).primaryColor;
   }
 
   bool signIntoAccount({email, password}) {
@@ -704,6 +703,7 @@ class ChoiceState extends State<Choice> {
   @override
   Widget build(BuildContext context) {
     // SystemChrome.setEnabledSystemUIOverlays([]);
+    primaryColor = Theme.of(context).primaryColor;
     return WillPopScope(
       onWillPop: () {
         return _showDialog(context);

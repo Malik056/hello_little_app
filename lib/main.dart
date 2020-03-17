@@ -4,8 +4,8 @@ import 'package:flutter/services.dart';
 import 'choice.dart';
 
 void main() {
-  SystemChrome.setEnabledSystemUIOverlays([]);
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIOverlays([]);
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
       .then((_) {
     runApp(
