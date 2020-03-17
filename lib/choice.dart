@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:hello_little_app/main.dart';
 
 import 'clipper.dart';
+import 'logo.dart';
 
 class Choice extends StatefulWidget {
   @override
@@ -713,7 +714,7 @@ class ChoiceState extends State<Choice> {
         backgroundColor: Theme.of(context).primaryColor,
         body: Column(
           children: <Widget>[
-            // logo(context),
+            Logo(),
             Padding(
               padding: EdgeInsets.only(top: 80, left: 20, right: 20),
               child: Container(
